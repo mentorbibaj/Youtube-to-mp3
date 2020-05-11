@@ -15,9 +15,13 @@ You need to install these tools to make it work:
 ### Installing
 
 Step 1: After installing all the tools mentioned above, upload index.php inside a webhosting.
+
 Step 2: If you didn't make a global access for youtube-dl, then copy ffmpeg.exe, ffplay.exe, ffprobe.exe, download.php inside the same folder.
+
 Step 3: run command: "ngrok http 80" to make your local project public.
+
 Step 4: Copy the link generated from the command in Step 3 and put it inside variable $base in index.php(from step 1).
+
 Step 5: Access your webhosting and try it out. Wait till the video gets converted because, I did not use ajax or any other libraries for the requests...
 
 * You should keep in mind that "ngrok" is a free tool and does not process requests that fast. To replace "ngrok" use your own dedicated server, where you should have public ip-s and a possibility for the php to run the "exec" function.
